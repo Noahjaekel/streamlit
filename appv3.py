@@ -9,7 +9,7 @@ st.set_page_config(page_title = "Real Estate Sale Price Prediciton",
 
 header = st.container()
 
-Exploratives, House_Price, Capstone_Project = st.tabs(["Descriptive Analysis", "House Price Prediction", "Our Capstone Project"])
+Capstone_Project, Exploratives, House_Price = st.tabs([ "Our Capstone Project", "Descriptive Analysis", "House Price Prediction"])
 
 with header:
     st.title("Welcome to our Project!")

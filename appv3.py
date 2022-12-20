@@ -246,7 +246,11 @@ with Exploratives:
     plot4.plotly_chart(fig_TotalBsmtSF)
     plot5.subheader("Distribution of Basement sq. ft. (finished)")
     plot5.plotly_chart(fig_BsmtFinSF1)
-
+with House_Price:
+    predictions[""] = 1
+    predictions = pd.concat([predictions, append])
+    fig = px.bar(predictions, x="", y="potential", color="improvement", title="Improvement Potential")
+    st.plotly_chart(fig)
         
         
         

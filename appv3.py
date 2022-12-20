@@ -233,8 +233,7 @@ with Exploratives:
     fig_GarageCars = px.histogram(df, x="GarageCars", color=df["GarageCars"].tolist(), 
     color_discrete_map=c)
     fig_GarageCars.update_layout(showlegend=False)
-    
- with Exploratives:
+    #plotting
     plot1, plot2, plot3 = st.columns(3)
     plot1.subheader("Distribution of Overall Quality")
     plot1.plotly_chart(fig_OverallQual, use_container_width=True)
@@ -249,9 +248,9 @@ with Exploratives:
     plot5.subheader("Distribution of Basement sq. ft. (finished)")
     plot5.plotly_chart(fig_BsmtFinSF1, use_container_width=True)
 with House_Price:
-    predictions[""] = 1
-    predictions = pd.concat([predictions, append])
-    fig = px.bar(predictions, x="", y="potential", color="improvement", title="Improvement Potential")
-    st.plotly_chart(fig, use_container_width=True)
-        
+  predictions[""] = 1
+  predictions = pd.concat([predictions, append])
+  fig = px.bar(predictions, x="", y="potential", color="improvement", title="Improvement Potential")
+  st.plotly_chart(fig, use_container_width=True)
+
         

@@ -231,30 +231,24 @@ with Exploratives:
     color_discrete_map=c)
     fig_GarageCars.update_layout(showlegend=False)
     
-    
-with Exploratives:
+ with Exploratives:
     plot1, plot2, plot3 = st.columns(3)
     plot1.subheader("Distribution of Overall Quality")
-    plot1.plotly_chart(fig_OverallQual)
+    plot1.plotly_chart(fig_OverallQual, use_container_width=True)
     plot2.subheader("Gross living area Distribution")
-    plot2.plotly_chart(fig_GrLivArea)
+    plot2.plotly_chart(fig_GrLivArea, use_container_width=True)
     plot3.subheader("Distribution of Garage Cars")
-    plot3.plotly_chart(fig_GarageCars)
+    plot3.plotly_chart(fig_GarageCars, use_container_width=True)
     #try pyplot for comparison
     plot4, plot5 = st.columns(2)
     plot4.subheader("Distribution of Basement sq. ft. (Total)")
-    plot4.plotly_chart(fig_TotalBsmtSF)
+    plot4.plotly_chart(fig_TotalBsmtSF, use_container_width=True)
     plot5.subheader("Distribution of Basement sq. ft. (finished)")
-    plot5.plotly_chart(fig_BsmtFinSF1)
+    plot5.plotly_chart(fig_BsmtFinSF1, use_container_width=True)
 with House_Price:
     predictions[""] = 1
     predictions = pd.concat([predictions, append])
     fig = px.bar(predictions, x="", y="potential", color="improvement", title="Improvement Potential")
-    st.plotly_chart(fig)
-        
-        
-        
-        
-        
+    st.plotly_chart(fig, use_container_width=True)
         
         

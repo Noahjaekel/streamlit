@@ -260,6 +260,7 @@ with House_Price:
 with Capstone_Project:
   st.header("Capstone Project")
   st.write("__RandomForest__")
+  st.write("our results when just training the data with all the variables")
   
   data = [
     ["R2 on train", 0.9735],
@@ -277,6 +278,16 @@ with Capstone_Project:
   
   
   st.write("__RandomForest mit Hypertuning__")
+  st.write("our results when just training the data with all the variables")
+  
+  data = [
+    ["R2 on train", 0.],
+    ["RMSE", 2],
+    ["MAPE", 0.],
+    ["R2 on test", 0.]]
+  df = pd.DataFrame(data, columns=["type of measure", "value"])
+
+  st.dataframe(df)
   
   
   
@@ -287,6 +298,7 @@ with Capstone_Project:
   
     
   st.write("__RandomForest mit Hypertuning und randomizedgridsearch__")
+  st.write("our results when just training the data with all the variables")
   
   
   
@@ -296,6 +308,7 @@ with Capstone_Project:
   
   
   st.write("__PoissonRegression__")
+  st.write("our results when just training the data with all the variables")
   
   
   
@@ -305,6 +318,7 @@ with Capstone_Project:
   
   
   st.write("__LinearRegression__")
+  st.write("our results when just training the data with all the variables")
   
   
   
@@ -313,6 +327,7 @@ with Capstone_Project:
   
   
   st.write("__DecisionTree__")
+  st.write("our results when just training the data with all the variables")
   
   
   
@@ -321,6 +336,7 @@ with Capstone_Project:
   
   
   st.write("__LassoModel__")
+  st.write("our results when just training the data with all the variables")
   
   
   

@@ -24,6 +24,9 @@ with Exploratives:
         data = pd.read_csv(file)
         return data
     df = read("train.csv")
+    st.subheader("Distribution of Target Variable in training set")
+    Saleprices = pd.DataFrame(df["SalePrice"].value_counts())
+    st.bar_chart(Saleprices.head(50))
 with House_Price:
     with st.form(key='my_form'):
         st.header("Please select values")

@@ -259,7 +259,7 @@ with House_Price:
   
 with Capstone_Project:
   st.header("Capstone Project")
-  st.write("__This is a bold and underlined text__")
+  st.write("__RandomForest__")
   
   data = [
     ["R2 on train", 0.9735],
@@ -269,11 +269,65 @@ with Capstone_Project:
   df = pd.DataFrame(data, columns=["type of measure", "value"])
 
   st.dataframe(df)
+  
+  
+  
+  
+  
+  
+  
+  st.write("__RandomForest mit Hypertuning__")
+  
+  
+  
+  
+  
+  
+  
+  
     
-  st.write(f'R2 on train: {0.9734853334451147:.4f}')
-  st.write(f'RMSE: {27092.54580765548:.4f}')
-  st.write(f'MAPE: {0.11644066702809673:.4f}')
-  st.write(f'R2 on test: {0.8972023937123546:.4f}')
+  st.write("__RandomForest mit Hypertuning und randomizedgridsearch__")
+  
+  
+  
+  
+  
+  
+  
+  
+  st.write("__PoissonRegression__")
+  
+  
+  
+  
+  
+  
+  
+  
+  st.write("__LinearRegression__")
+  
+  
+  
+  
+  
+  
+  
+  st.write("__DecisionTree__")
+  
+  
+  
+  
+  
+  
+  
+  st.write("__LassoModel__")
+  
+  
+  
+  
+  
+    
+  
   image = Image.open('var_imp.png')
   st.image(image, caption='Sunrise by the mountains')
 

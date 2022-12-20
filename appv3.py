@@ -29,17 +29,17 @@ with House_Price:
         st.header("Please select values")
         c1, c2, c3, c4, c5 = st.columns(5)
         u_qual = c1.slider("Quality of home", 1,10,5)
-        u_liv = c2.number_input("Gross living area (sq. feet)", min_value = round(df["GrLivArea"].min()), 
-                                max_value = round(df["GrLivArea"].max()), value = round(df["GrLivArea"].median()),
+        u_liv = c2.number_input("Gross living area (sq. feet)", min_value = int(df["GrLivArea"].min()), 
+                                max_value = int(df["GrLivArea"].max()), value = int(df["GrLivArea"].median()),
                                 step = 20)
-        u_car = c3.slider("Garage size (cars)", min_value = df["GarageCars"].min(), 
-                                max_value = df["GarageCars"].max(), value = 2,
+        u_car = c3.slider("Garage size (cars)", min_value = int(df["GarageCars"].min()), 
+                                max_value = int(df["GarageCars"].max()), value = 2,
                                 step = 1)
-        u_bas1 = c4.number_input("Basement size total", min_value = round(df["TotalBsmtSF"].min()), 
-                                max_value = round(df["TotalBsmtSF"].max()), value = round(df["TotalBsmtSF"].median()), 
+        u_bas1 = c4.number_input("Basement size total", min_value = int(df["TotalBsmtSF"].min()), 
+                                max_value = int(df["TotalBsmtSF"].max()), value = int(df["TotalBsmtSF"].median()), 
                                 step = 20)
-        u_bas2 = c5.number_input("Basement size finished", min_value = round(df["BsmtFinSF1"].min()), 
-                                max_value = round(df["BsmtFinSF1"].max()), value = round(df["BsmtFinSF1"].median()),
+        u_bas2 = c5.number_input("Basement size finished", min_value = int(df["BsmtFinSF1"].min()), 
+                                max_value = int(df["BsmtFinSF1"].max()), value = int(df["BsmtFinSF1"].median()),
                                 step = 20)
             
         user_input = pd.DataFrame({

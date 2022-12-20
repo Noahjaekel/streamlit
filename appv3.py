@@ -260,7 +260,7 @@ with House_Price:
 with Capstone_Project:
   st.header("Capstone Project")
   st.write("__RandomForest__")
-  st.write("our results when just training the data with all the variables")
+  st.write("training the data with all the variables")
   
   data = [
     ["R2 on train", 0.9735],
@@ -271,6 +271,9 @@ with Capstone_Project:
 
   st.dataframe(df)
   
+  image = Image.open('variable_importance_randomforest.png')
+  st.image(image, caption='RandomForest_variable_importance')
+  
   
   
   
@@ -278,7 +281,7 @@ with Capstone_Project:
   
   
   st.write("__RandomForest mit Hypertuning__")
-  st.write("our results when just training the data with all the variables")
+  st.write("training the data with all the variables")
   
   data = [
     ["R2 on train", 0.9678],
@@ -298,7 +301,16 @@ with Capstone_Project:
   
     
   st.write("__RandomForest mit Hypertuning und randomizedgridsearch__")
-  st.write("our results when just training the data with all the variables")
+  st.write("training the data with all the variables")
+  
+  data = [
+    ["R2 on train", 0.9611],
+    ["RMSE", 28136.8361],
+    ["MAPE", 0.1148],
+    ["R2 on test", 0.8891]]
+  df = pd.DataFrame(data, columns=["type of measure", "value"])
+
+  st.dataframe(df)
   
   
   
@@ -308,9 +320,16 @@ with Capstone_Project:
   
   
   st.write("__PoissonRegression__")
-  st.write("our results when just training the data with all the variables")
+  st.write("training the data with all the variables")
   
-  
+  data = [
+    ["R2 on train", 0.],
+    ["RMSE", 2],
+    ["MAPE", 0.],
+    ["R2 on test", 0.]]
+  df = pd.DataFrame(data, columns=["type of measure", "value"])
+
+  st.dataframe(df)
   
   
   

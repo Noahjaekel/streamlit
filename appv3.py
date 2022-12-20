@@ -33,7 +33,7 @@ with House_Price:
     with st.form(key='my_form'):
         st.header("Please select values")
         c1, c2, c3, c4, c5 = st.columns(5)
-        u_qual = c1.slider("Quality of home", 1,10,5)
+        u_qual = c1.slider("Quality of home (Overall material and finish quality)", 1,10,5)
         u_liv = c2.number_input("Gross living area (sq. feet)", min_value = int(df["GrLivArea"].min()), 
                                 max_value = int(df["GrLivArea"].max()), value = int(df["GrLivArea"].median()),
                                 step = 20)

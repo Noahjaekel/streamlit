@@ -33,7 +33,7 @@ with House_Price:
     with st.form(key='my_form'):
         st.header("Please select values")
         c1, c2, c3, c4, c5 = st.columns(5)
-        u_qual = c1.slider("Quality of home (Overall material and finish quality)", 1,10,5)
+        u_qual = c1.slider("Quality of home", 1,10,5)
         u_liv = c2.number_input("Gross living area (sq. feet)", min_value = int(df["GrLivArea"].min()), 
                                 max_value = int(df["GrLivArea"].max()), value = int(df["GrLivArea"].median()),
                                 step = 20)
@@ -260,6 +260,14 @@ with House_Price:
 with Capstone_Project:
   st.header("Capstone Project")
   st.write('RandomForest')
+  
+  data = [
+    ["R2 on train", 0.9735],
+    ["RMSE", 27'092.5458],
+    ["MAPE", 0.1164],
+    ["R2 on test", 0.8972]]
+  st.table(data)
+    
   st.write(f'R2 on train: {0.9734853334451147:.4f}')
   st.write(f'RMSE: {27092.54580765548:.4f}')
   st.write(f'MAPE: {0.11644066702809673:.4f}')

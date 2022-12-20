@@ -263,7 +263,7 @@ with Capstone_Project:
   
   data = [
     ["R2 on train", 0.9735],
-    ["RMSE", 27'092.5458],
+    ["RMSE", 27092.5458],
     ["MAPE", 0.1164],
     ["R2 on test", 0.8972]]
   st.table(data)

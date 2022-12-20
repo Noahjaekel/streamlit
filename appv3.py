@@ -55,7 +55,7 @@ with House_Price:
             "BsmtFinSF1": [u_bas2]
         })
         submit_button = st.form_submit_button(label='Submit')
-    st.write(user_input)
+    #st.write(user_input)
         
             
     
@@ -80,8 +80,8 @@ with House_Price:
     if user_input["BsmtFinSF1"].item() < (0.8 * user_input["TotalBsmtSF"].item()):
         user_input_ext_combined["BsmtFinSF1"] = user_input_ext_combined["TotalBsmtSF"] *0.8
         Improvementpot = round(model_red.predict(user_input_ext_combined).item() - predicted_Value)
-        st.markdown("**by finishing your basement you could increase SalesPrice by:**")
-        st.subheader(f"${Improvementpot}")
+        #st.markdown("**by finishing your basement you could increase SalesPrice by:**")
+        #st.subheader(f"${Improvementpot}")
         predictions = pd.DataFrame({
             "improvement": ["finishing Basement"],
             "potential": [Improvementpot]
@@ -107,7 +107,7 @@ with House_Price:
         "potential": [model_red.predict(user_input_ext_combined).item() - predicted_Value]
         })
     predictions = pd.concat([predictions, combined])
-    st.write(predictions)
+    #st.write(predictions)
             
     
 with Exploratives:

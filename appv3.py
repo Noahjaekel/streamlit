@@ -123,7 +123,7 @@ with Exploratives:
         c[i] = z
     fig_OverallQual = px.histogram(df, x="OverallQual", color=df["OverallQual"].tolist(), 
     color_discrete_map=c)
-    fig_GrLivArea.update_layout(showlegend=False)
+    fig_OverallQual.update_layout(showlegend=False)
     #plotting GrLivArea with Highlighting
     #first step creating bins
     data = df["GrLivArea"]

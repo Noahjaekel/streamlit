@@ -268,7 +268,7 @@ with Capstone_Project:
     ["R2 on test", 0.8972]]
   df = pd.DataFrame(data, columns=["Gender", "Age"])
 
-   st.dataframe(df)
+  st.dataframe(df)
     
   st.write(f'R2 on train: {0.9734853334451147:.4f}')
   st.write(f'RMSE: {27092.54580765548:.4f}')

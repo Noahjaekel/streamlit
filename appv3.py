@@ -4,6 +4,7 @@ import pickle
 import matplotlib.pyplot as plt
 import plotly.express as px
 import numpy as np
+from PIL import Image
 st.set_page_config(page_title = "Real Estate Sale Price Prediciton",
                    layout = "wide")
 

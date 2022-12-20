@@ -252,7 +252,8 @@ with House_Price:
   predictions = pd.concat([predictions, append])
   fig = px.bar(predictions, x="", y="potential", color="improvement", title="Improvement Potential")
   st.plotly_chart(fig, use_container_width=True)
+  
+with Capstone_Project:
+  st.header("Kaggle Competition: House Prices") 
 
- with Capstone_Project:
-    #Überschrift
-    st.header("Kaggle Competition: House Prices")    
+       

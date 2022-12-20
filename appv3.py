@@ -259,7 +259,7 @@ with House_Price:
   
 with Capstone_Project:
   st.header("Capstone Project")
-  st.markdown("<b>RandomForest</b>")
+  st.write("__This is a bold and underlined text__")
   
   data = [
     ["R2 on train", 0.9735],

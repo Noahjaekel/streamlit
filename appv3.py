@@ -26,7 +26,8 @@ with Exploratives:
     df = read("train.csv")
     st.subheader("Distribution of Target Variable in training set")
     Saleprices = pd.DataFrame(df["SalePrice"].value_counts())
-    st.bar_chart(Saleprices.head(50))
+    fig_SalePrice = px.histogram(df, x="SalePrice")
+    st.plotly_chart(fig_SalePrice, use_container_width=True)
 with House_Price:
     with st.form(key='my_form'):
         st.header("Please select values")
@@ -255,7 +256,7 @@ with House_Price:
   
 with Capstone_Project:
   st.header("Capstone Project")
-  st.markdown('**RandomForest**')
+  st.write('RandomForest')
   st.write(f'R2 on train: {0.9734853334451147:.4f}')
   st.write(f'RMSE: {27092.54580765548:.4f}')
   st.write(f'MAPE: {0.11644066702809673:.4f}')

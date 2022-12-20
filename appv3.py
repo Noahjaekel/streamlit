@@ -267,7 +267,7 @@ with Capstone_Project:
     ["RMSE", 27092.5458],
     ["MAPE", 0.1164],
     ["R2 on test", 0.8972]]
-  df = pd.DataFrame(data, columns=["type of measure", "value"], index=False)
+  df = pd.DataFrame(data, columns=["type of measure", "value"])
 
   st.dataframe(df)
   
@@ -287,7 +287,7 @@ with Capstone_Project:
     ["R2 on test", 0.]]
   df = pd.DataFrame(data, columns=["type of measure", "value"])
 
-  st.dataframe(df)
+  st.dataframe(df, index=False)
   
   
   

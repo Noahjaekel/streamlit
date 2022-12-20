@@ -266,9 +266,9 @@ with Capstone_Project:
     ["RMSE", 27092.5458],
     ["MAPE", 0.1164],
     ["R2 on test", 0.8972]]
-  df = pd.DataFrame(data, columns=["Gender", "Age"])
+  df = pd.DataFrame(data, columns=["type of measure", "value"])
 
-  st.dataframe(df)
+  st.dataframe(df, width=[100, 100], style={"border": "1px solid black"})
     
   st.write(f'R2 on train: {0.9734853334451147:.4f}')
   st.write(f'RMSE: {27092.54580765548:.4f}')

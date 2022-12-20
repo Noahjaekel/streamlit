@@ -255,7 +255,7 @@ with House_Price:
   
 with Capstone_Project:
   st.header("Capstone Project")
-  st.write('RandomForest')
+  st.markdown('**RandomForest**')
   st.write(f'R2 on train: {0.9734853334451147:.4f}')
   st.write(f'RMSE: {27092.54580765548:.4f}')
   st.write(f'MAPE: {0.11644066702809673:.4f}')

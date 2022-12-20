@@ -123,7 +123,6 @@ with Exploratives:
         c[i] = z
     fig_OverallQual = px.histogram(df, x="OverallQual", color=df["OverallQual"].tolist(), 
     color_discrete_map=c)
-    fig_OverallQual.update_layout(showlegend=False)
     #plotting GrLivArea with Highlighting
     #first step creating bins
     data = df["GrLivArea"]
@@ -160,8 +159,7 @@ with Exploratives:
     #plotting
     data = pd.DataFrame(data)
     fig_GrLivArea = px.histogram(data, x=0, color=data[0], 
-    color_discrete_map=c)
-    fig_GrLivArea.update_layout(showlegend=False)
+    color_discrete_map=c) 
     #Plotting Basement Total
     data = df["TotalBsmtSF"].loc[df["TotalBsmtSF"]< 4000]
     data = pd.DataFrame(data)
@@ -255,4 +253,6 @@ with House_Price:
   fig = px.bar(predictions, x="", y="potential", color="improvement", title="Improvement Potential")
   st.plotly_chart(fig, use_container_width=True)
 
-        
+ with Capstone_Project:
+    #Überschrift
+    st.header("Kaggle Competition: House Prices")    

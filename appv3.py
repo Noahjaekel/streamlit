@@ -281,13 +281,13 @@ with Capstone_Project:
   st.write("our results when just training the data with all the variables")
   
   data = [
-    ["R2 on train", 0.],
-    ["RMSE", 2],
-    ["MAPE", 0.],
-    ["R2 on test", 0.]]
+    ["R2 on train", 0.9678],
+    ["RMSE", 27093.0079],
+    ["MAPE", 0.1151],
+    ["R2 on test", 0.8972]]
   df = pd.DataFrame(data, columns=["type of measure", "value"])
 
-  st.dataframe(df, index=False)
+  st.dataframe(df)
   
   
   

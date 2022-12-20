@@ -263,5 +263,7 @@ with Capstone_Project:
   st.write(f'RMSE: {27092.54580765548:.4f}')
   st.write(f'MAPE: {0.11644066702809673:.4f}')
   st.write(f'R2 on test: {0.8972023937123546:.4f}')
+  image = Image.open('var_imp.png')
+  st.image(image, caption='Sunrise by the mountains')
 
        

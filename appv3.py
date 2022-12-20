@@ -44,8 +44,8 @@ with House_Price:
             
         user_input = pd.DataFrame({
             "OverallQual": [u_qual],
-            "GrLivArea": [u_liv],
             "GarageCars": [u_car],
+            "GrLivArea": [u_liv],
             "TotalBsmtSF": [u_bas1],
             "BsmtFinSF1": [u_bas2]
         })

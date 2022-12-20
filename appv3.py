@@ -4,7 +4,6 @@ import pickle
 import matplotlib.pyplot as plt
 import plotly.express as px
 import numpy as np
-from PIL import Image
 st.set_page_config(page_title = "Real Estate Sale Price Prediciton",
                    layout = "wide")
 
@@ -79,8 +78,8 @@ with House_Price:
     if user_input["BsmtFinSF1"].item() < (0.8 * user_input["TotalBsmtSF"].item()):
         user_input_ext_combined["BsmtFinSF1"] = user_input_ext_combined["TotalBsmtSF"] *0.8
         Improvementpot = round(model_red.predict(user_input_ext_combined).item() - predicted_Value)
-        #st.markdown("**by finishing your basement you could increase SalesPrice by:**")
-        #st.subheader(f"${Improvementpot}")
+        st.markdown("**by finishing your basement you could increase SalesPrice by:**")
+        st.subheader(f"${Improvementpot}")
         predictions = pd.DataFrame({
             "improvement": ["finishing Basement"],
             "potential": [Improvementpot]
@@ -106,7 +105,7 @@ with House_Price:
         "potential": [model_red.predict(user_input_ext_combined).item() - predicted_Value]
         })
     predictions = pd.concat([predictions, combined])
-    #st.write(predictions)
+    st.write(predictions)
             
     
 with Exploratives:
@@ -124,7 +123,6 @@ with Exploratives:
         c[i] = z
     fig_OverallQual = px.histogram(df, x="OverallQual", color=df["OverallQual"].tolist(), 
     color_discrete_map=c)
-    fig_OverallQual.update_layout(showlegend=False)
     #plotting GrLivArea with Highlighting
     #first step creating bins
     data = df["GrLivArea"]
@@ -162,7 +160,6 @@ with Exploratives:
     data = pd.DataFrame(data)
     fig_GrLivArea = px.histogram(data, x=0, color=data[0], 
     color_discrete_map=c) 
-    fig_GrLivArea.update_layout(showlegend=False)
     #Plotting Basement Total
     data = df["TotalBsmtSF"].loc[df["TotalBsmtSF"]< 4000]
     data = pd.DataFrame(data)
@@ -257,6 +254,11 @@ with House_Price:
   st.plotly_chart(fig, use_container_width=True)
   
 with Capstone_Project:
-  st.header("Kaggle Competition: House Prices") 
+  st.header("Capstone Project")
+  st.write('RandomForest')
+  st.write(f'R2 on train: {0.9734853334451147:.4f}')
+  st.write(f'RMSE: {27092.54580765548:.4f}')
+  st.write(f'MAPE: {0.11644066702809673:.4f}')
+  st.write(f'R2 on test: {0.8972023937123546:.4f}')
 
        

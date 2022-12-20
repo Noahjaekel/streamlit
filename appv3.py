@@ -54,7 +54,7 @@ with House_Price:
         
             
     
-    model_red = pickle.load(open('model_red.pkl', 'rb'))
+    model_red = pickle.load(open('model_redv2.pkl', 'rb'))
     predicted_Value = model_red.predict(user_input).item()
     st.markdown("**Your Valuation:**")
     predicted_Value = round(predicted_Value)

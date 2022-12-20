@@ -9,7 +9,7 @@ st.set_page_config(page_title = "Real Estate Sale Price Prediciton",
 
 header = st.container()
 
-Exploratives, House_Price = st.tabs(["Descriptive Analysis", "House Price Prediction"])
+Exploratives, House_Price, Capstone Project = st.tabs(["Descriptive Analysis", "House Price Prediction", "Our Capstone Project])
 
 with header:
     st.title("Welcome to our Project!")
@@ -231,7 +231,7 @@ with Exploratives:
     color_discrete_map=c)
     fig_GarageCars.update_layout(showlegend=False)
     
-  with Exploratives:
+ with Exploratives:
     plot1, plot2, plot3 = st.columns(3)
     plot1.subheader("Distribution of Overall Quality")
     plot1.plotly_chart(fig_OverallQual, use_container_width=True)
@@ -250,3 +250,5 @@ with House_Price:
     predictions = pd.concat([predictions, append])
     fig = px.bar(predictions, x="", y="potential", color="improvement", title="Improvement Potential")
     st.plotly_chart(fig, use_container_width=True)
+        
+        

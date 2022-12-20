@@ -266,7 +266,10 @@ with Capstone_Project:
     ["RMSE", 27092.5458],
     ["MAPE", 0.1164],
     ["R2 on test", 0.8972]]
-  st.table(data)
+  st.table(data,
+         header=["performance measure", "value"],
+         width=[100, 100],
+         style={"border": "1px solid black"})
     
   st.write(f'R2 on train: {0.9734853334451147:.4f}')
   st.write(f'RMSE: {27092.54580765548:.4f}')

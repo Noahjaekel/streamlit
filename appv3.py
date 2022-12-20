@@ -266,7 +266,7 @@ with Capstone_Project:
     ["RMSE", 27092.5458],
     ["MAPE", 0.1164],
     ["R2 on test", 0.8972]]
-    df = pd.DataFrame(data, columns=["Gender", "Age"])
+  df = pd.DataFrame(data, columns=["Gender", "Age"])
 
    st.dataframe(df)
     

@@ -271,7 +271,7 @@ with Capstone_Project:
 
   st.dataframe(df)
   
-  image = Image.open('variable_importance_randomforest.png')
+  image = Image.open('variable_importance_randomforest-2.png')
   st.image(image, caption='RandomForest_variable_importance')
   
   

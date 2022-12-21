@@ -26,7 +26,7 @@ with Exploratives:
         data = pd.read_csv(file)
         return data
     df = read("train.csv")
-    st.subheader("Distribution of Target Variable in training set")
+    st.subheader("Distribution of Sale Prices in Ames, Iowa")
     Saleprices = pd.DataFrame(df["SalePrice"].value_counts())
     fig_SalePrice = px.histogram(df, x="SalePrice")
     st.plotly_chart(fig_SalePrice, use_container_width=True)

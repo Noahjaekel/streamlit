@@ -271,8 +271,27 @@ with Capstone_Project:
 
   st.dataframe(df)
   
+  st.write("we want to know about the most important variables for our prediction")
   image = Image.open('variable_importance_randomforest-2.png')
   st.image(image, caption='RandomForest_variable_importance')
+  
+  st.write("training the data with just the five most important variables")
+  data = [
+    ["R2 on train", 0.],
+    ["RMSE", ],
+    ["MAPE", 0.],
+    ["R2 on test", 0.],
+    ["Veränderungen absolut", ],
+    ["RMSE", ],
+    ["MAPE", ],
+    ["R2 on test"],
+    ["Veränderungen prozentual", ],
+    ["RMSE", ],
+    ["MAPE", ],
+    ["R2 on test"]]
+  df = pd.DataFrame(data, columns=["type of measure", "value"])
+
+  st.dataframe(df)
   
   
   

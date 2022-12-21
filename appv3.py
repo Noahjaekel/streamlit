@@ -313,7 +313,7 @@ with Capstone_Project:
   
   
   
-  st.write("__RandomForest mit Hypertuning__")
+  st.write("__RandomForest with Hypertuning__")
   st.write("training the data with all the variables")
   
   data = [
@@ -324,6 +324,10 @@ with Capstone_Project:
   df = pd.DataFrame(data, columns=["type of measure", "value"])
 
   st.dataframe(df)
+  
+  st.write("we want to know about the most important variables for our prediction")
+  image = Image.open('variable_importance_randomforest_hype.png')
+  st.image(image, caption='RandomForest_with hyperparameter_variable_importance')
   
   
   
@@ -396,7 +400,5 @@ with Capstone_Project:
   
     
   
-  image = Image.open('var_imp.png')
-  st.image(image, caption='Sunrise by the mountains')
 
        

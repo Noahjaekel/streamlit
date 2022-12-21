@@ -331,7 +331,7 @@ with Capstone_Project:
 
   st.dataframe(df)
   
-  st.write("percent changes")
+  st.write("percentage changes")
   data = [
     ["RMSE", -0.0012],
     ["MAPE", 0.1705],
@@ -385,7 +385,7 @@ with Capstone_Project:
 
   st.dataframe(df)
   
-  st.write("percent changes")
+  st.write("percentage changes")
   data = [
     ["RMSE", 0.1774],
     ["MAPE", 0.2688],
@@ -441,7 +441,7 @@ with Capstone_Project:
 
   st.dataframe(df)
   
-  st.write("percent changes")
+  st.write("percentage changes")
   data = [
     ["RMSE", -0.0258],
     ["MAPE", 0.1609],
@@ -495,7 +495,7 @@ with Capstone_Project:
 
   st.dataframe(df)
   
-  st.write("percent changes")
+  st.write("percentage changes")
   data = [
     ["RMSE", 2.1201],
     ["MAPE", 2.5866],
@@ -547,7 +547,7 @@ with Capstone_Project:
 
   st.dataframe(df)
   
-  st.write("percent changes")
+  st.write("percentage changes")
   data = [
     ["RMSE", 0.2188],
     ["MAPE", 0.2565],
@@ -580,16 +580,7 @@ with Capstone_Project:
   st.image(image, caption='RandomForest_with hyperparameter and randomizedgridsearch_variable_importance')
   
   st.write("training the data with just the five most important variables")
-  st.write("new performance   /   absolute changes   /   percentage changes")
-  data = [
-    ["R2 on train", 0.0481, "-", "-"],
-    ["RMSE", 85029.4914, 57777.2467, 2.1201],
-    ["MAPE", 0.4082, 0.2944, 2.5866],
-    ["R2 on test", -0.0126, -0.8959, -1.0142]]
-  
-  df = pd.DataFrame(data, columns=["type of measure", "new value", "absolute change", "percentage change"])
-
-  st.dataframe(df)
+ 
   
   st.write("absolute changes")
   data = [
@@ -601,7 +592,7 @@ with Capstone_Project:
 
   st.dataframe(df)
   
-  st.write("percent changes")
+  st.write("percentage changes")
   data = [
     ["RMSE", 2.1201],
     ["MAPE", 2.5866],
@@ -611,6 +602,12 @@ with Capstone_Project:
 
   st.dataframe(df)
   
+  st.subheader("Presenting our best model - The RandomForest")
+  st.markdown("After all machine learning algorithms we used, we got the best performance (while just using 5 variables) of predicting the saleprice of the house with the RandomForest")
+  st.markdown("Below there is a scatterplot which presents the performance of our model:")
+  
+  
+
   
 
   

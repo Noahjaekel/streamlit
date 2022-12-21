@@ -288,6 +288,9 @@ with Capstone_Project:
   
   data = [["RandomForest", "RandomForest with Hypertuning", "RandomForest with randomizedgridsearch and Hypertuning", "LinearRegression", "DecisionTree", "LassoModel"]]
   
+  st.write("Why did we decide to use several machine learning algorithms?")
+  st.write("As the choice of the perfect algoritm depends on the need of a project and the characteristics of the data, we had to try out several algorithms to find the one that works the best for our specific problem
+  
   df = pd.DataFrame(data)
 
   st.dataframe(df)
@@ -578,7 +581,7 @@ with Capstone_Project:
   
   st.write("we want to know about the most important variables for our prediction")
   image = Image.open('variable_importance_randomforest_hype_rand.png')
-  st.image(image, caption='RandomForest_with hyperparameter and randomizedgridsearch_variable_importance')
+  st.image(image, caption='Lasso_variable_importance')
   
   st.write("training the data with just the five most important variables")
  

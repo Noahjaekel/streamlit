@@ -288,7 +288,7 @@ with Capstone_Project:
     ["RandomForest", "RandomForest with Hypertuning", "RandomForest with randomizedgridsearch and Hypertuning", "LinearRegression", "DecisionTree", "LassoModel"],
   
   st.write("__RandomForest__")
-  st.write("training the data with all the variables")
+  st.write("training the data with all variables")
     
   
   

@@ -629,7 +629,8 @@ with Capstone_Project:
   st.dataframe(df)
   
   st.markdown("__Conclusion and usage of results__"
-  st.write("
+  st.write("In the end our predictions are pretty good. An R2 on test of 0.89 can be considered as high because the model is able to explain 89% of the variance in the dependent variable")
+  st.write("The MAPE with 0.13 can be considered as a relatively low value"]
 
   st.write("our performance with just using the five most important variables")
   data = [

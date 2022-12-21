@@ -630,7 +630,6 @@ with Capstone_Project:
   
   st.markdown("__Conclusion and usage of results__"
 
-              
   data = [
     ["R2 on train", 0.9705],
     ["RMSE", 27219.9228],

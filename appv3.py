@@ -326,8 +326,40 @@ with Capstone_Project:
   st.dataframe(df)
   
   st.write("we want to know about the most important variables for our prediction")
-  image = Image.open('variable_importance_randomforest_hype.png')
-  st.image(image, caption='RandomForest_with hyperparameter_variable_importance')
+  #image = Image.open('variable_importance_randomforest_hype.png')
+  #st.image(image, caption='RandomForest_with hyperparameter_variable_importance')
+  
+  st.write("training the data with just the five most important variables")
+  st.write("new performance")
+  data = [
+    ["R2 on train", 0.9453],
+    ["RMSE", 31899.4466],
+    ["MAPE", 0.1460],
+    ["R2 on test", 0.8264]]
+  
+  df = pd.DataFrame(data, columns=["type of measure", "value"])
+
+  st.dataframe(df)
+  
+  st.write("absolute changes")
+  data = [
+    ["RMSE", 4647.2019],
+    ["MAPE", 0.0309],
+    ["R2 on test", -0.0696]]
+  
+  df = pd.DataFrame(data, columns=["type of measure", "value"])
+
+  st.dataframe(df)
+  
+  st.write("percent changes")
+  data = [
+    ["RMSE", 0.1774],
+    ["MAPE", 0.2688],
+    ["R2 on test", -0.0777]]
+  
+  df = pd.DataFrame(data, columns=["type of measure", "value"])
+
+  st.dataframe(df)
   
   
   
@@ -342,31 +374,49 @@ with Capstone_Project:
   
   data = [
     ["R2 on train", 0.9611],
-    ["RMSE", 28136.8361],
+    ["RMSE", 17392.009],
     ["MAPE", 0.1148],
     ["R2 on test", 0.8891]]
   df = pd.DataFrame(data, columns=["type of measure", "value"])
 
   st.dataframe(df)
   
+    st.write("we want to know about the most important variables for our prediction")
+  #image = Image.open('variable_importance_randomforest_hype_rand.png')
+  #st.image(image, caption='RandomForest_with hyperparameter and randomizedgridsearch_variable_importance')
   
-  
-  
-  
-  
-  
-  
-  st.write("__PoissonRegression__")
-  st.write("training the data with all the variables")
-  
+  st.write("training the data with just the five most important variables")
+  st.write("new performance")
   data = [
-    ["R2 on train", 0.],
-    ["RMSE", 2],
-    ["MAPE", 0.],
-    ["R2 on test", 0.]]
+    ["R2 on train", 0.9561],
+    ["RMSE", 27409.8859],
+    ["MAPE", 0.1333],
+    ["R2 on test", 0.8948]]
+  
   df = pd.DataFrame(data, columns=["type of measure", "value"])
 
   st.dataframe(df)
+  
+  st.write("absolute changes")
+  data = [
+    ["RMSE", -726.9501],
+    ["MAPE", 0.0185],
+    ["R2 on test", -0.0898]]
+  
+  df = pd.DataFrame(data, columns=["type of measure", "value"])
+
+  st.dataframe(df)
+  
+  st.write("percent changes")
+  data = [
+    ["RMSE", -0.0258],
+    ["MAPE", 0.1609],
+    ["R2 on test", 0.0064]]
+  
+  df = pd.DataFrame(data, columns=["type of measure", "value"])
+
+  st.dataframe(df)
+  
   
   
   
@@ -376,7 +426,50 @@ with Capstone_Project:
   st.write("__LinearRegression__")
   st.write("our results when just training the data with all the variables")
   
+  data = [
+    ["R2 on train", 0.9327],
+    ["RMSE", 28856.0652],
+    ["MAPE", 0.1183],
+    ["R2 on test", 0.8834]]
+  df = pd.DataFrame(data, columns=["type of measure", "value"])
+
+  st.dataframe(df)
   
+   st.write("we want to know about the most important variables for our prediction")
+  #image = Image.open('variable_importance_randomforest_hype_rand.png')
+  #st.image(image, caption='RandomForest_with hyperparameter and randomizedgridsearch_variable_importance')
+  
+  st.write("training the data with just the five most important variables")
+  st.write("new performance")
+  data = [
+    ["R2 on train", 0.0481],
+    ["RMSE", 85029.4914],
+    ["MAPE", 0.4082],
+    ["R2 on test", -0.0126]]
+  
+  df = pd.DataFrame(data, columns=["type of measure", "value"])
+
+  st.dataframe(df)
+  
+  st.write("absolute changes")
+  data = [
+    ["RMSE", 57777.2467],
+    ["MAPE", 0.2944],
+    ["R2 on test", -0.8959]]
+  
+  df = pd.DataFrame(data, columns=["type of measure", "value"])
+
+  st.dataframe(df)
+  
+  st.write("percent changes")
+  data = [
+    ["RMSE", 2.1201],
+    ["MAPE", 2.5866],
+    ["R2 on test", -1.0142]]
+  
+  df = pd.DataFrame(data, columns=["type of measure", "value"])
+
+  st.dataframe(df)
   
   
   
@@ -384,6 +477,51 @@ with Capstone_Project:
   
   st.write("__DecisionTree__")
   st.write("our results when just training the data with all the variables")
+  
+    data = [
+    ["R2 on train", 1.0],
+    ["RMSE", 50940.8499],
+    ["MAPE", 0.2194],
+    ["R2 on test", 0.0023]]
+  df = pd.DataFrame(data, columns=["type of measure", "value"])
+
+  st.dataframe(df)
+  
+   st.write("we want to know about the most important variables for our prediction")
+  #image = Image.open('variable_importance_decisiontree.png')
+  #st.image(image, caption='decisiontree_variable_importance')
+  
+  st.write("training the data with just the five most important variables")
+  st.write("new performance")
+  data = [
+    ["R2 on train", 1.0],
+    ["RMSE", 62088.6109],
+    ["MAPE", 0.2757],
+    ["R2 on test", 0.0045]]
+  
+  df = pd.DataFrame(data, columns=["type of measure", "value"])
+
+  st.dataframe(df)
+  
+  st.write("absolute changes")
+  data = [
+    ["RMSE", 11147.7610],
+    ["MAPE", 0.0563],
+    ["R2 on test", 0.0023]]
+  
+  df = pd.DataFrame(data, columns=["type of measure", "value"])
+
+  st.dataframe(df)
+  
+  st.write("percent changes")
+  data = [
+    ["RMSE", 0.2188],
+    ["MAPE", 0.2565],
+    ["R2 on test", -0.9948]]
+  
+  df = pd.DataFrame(data, columns=["type of measure", "value"])
+
+  st.dataframe(df)
   
   
   
@@ -393,6 +531,51 @@ with Capstone_Project:
   
   st.write("__LassoModel__")
   st.write("our results when just training the data with all the variables")
+  
+    data = [
+    ["R2 on train", 0.9327],
+    ["RMSE", 28135.8458],
+    ["MAPE", 0.1157],
+    ["R2 on test", 0.8891]]
+  df = pd.DataFrame(data, columns=["type of measure", "value"])
+
+  st.dataframe(df)
+  
+   st.write("we want to know about the most important variables for our prediction")
+  #image = Image.open('variable_importance_randomforest_hype_rand.png')
+  #st.image(image, caption='RandomForest_with hyperparameter and randomizedgridsearch_variable_importance')
+  
+  st.write("training the data with just the five most important variables")
+  st.write("new performance")
+  data = [
+    ["R2 on train", 0.0481],
+    ["RMSE", 85029.4914],
+    ["MAPE", 0.4082],
+    ["R2 on test", -0.0126]]
+  
+  df = pd.DataFrame(data, columns=["type of measure", "value"])
+
+  st.dataframe(df)
+  
+  st.write("absolute changes")
+  data = [
+    ["RMSE", 57777.2467],
+    ["MAPE", 0.2944],
+    ["R2 on test", -0.8959]]
+  
+  df = pd.DataFrame(data, columns=["type of measure", "value"])
+
+  st.dataframe(df)
+  
+  st.write("percent changes")
+  data = [
+    ["RMSE", 2.1201],
+    ["MAPE", 2.5866],
+    ["R2 on test", -1.0142]]
+  
+  df = pd.DataFrame(data, columns=["type of measure", "value"])
+
+  st.dataframe(df)
   
   
   

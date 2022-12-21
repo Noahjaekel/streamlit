@@ -582,12 +582,12 @@ with Capstone_Project:
   st.write("training the data with just the five most important variables")
   st.write("new performance   /   absolute changes   /   percentage changes")
   data = [
-    ["R2 on train", 0.0481],
-    ["RMSE", 85029.4914, "RMSE", 57777.2467, "RMSE", 2.1201],
-    ["MAPE", 0.4082, "MAPE", 0.2944, "MAPE", 2.5866],
-    ["R2 on test", -0.0126, "R2 on test", -0.8959, "R2 on test", -1.0142]]
+    ["R2 on train", 0.0481, , ],
+    ["RMSE", 85029.4914, 57777.2467, 2.1201],
+    ["MAPE", 0.4082, 0.2944, 2.5866],
+    ["R2 on test", -0.0126, -0.8959, -1.0142]]
   
-  df = pd.DataFrame(data, columns=["type of measure", "value"])
+  df = pd.DataFrame(data, columns=["type of measure", "new value", "absolute change", "percentage change"])
 
   st.dataframe(df)
   

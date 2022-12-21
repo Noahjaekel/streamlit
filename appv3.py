@@ -647,9 +647,9 @@ with Capstone_Project:
   
   st.write("further usage")
 
-#with House_Price:
- # image = Image.open('houe_sqft_price_usa.png')
-  #st.image(image, caption='Forecast of Salesprice per sqft')
+with House_Price:
+  image = Image.open('houe_sqft_price_usa.png')
+  st.image(image, caption='Forecast of Salesprice per sqft')
   
 
   

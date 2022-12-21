@@ -435,7 +435,7 @@ with Capstone_Project:
 
   st.dataframe(df)
   
-   st.write("we want to know about the most important variables for our prediction")
+  st.write("we want to know about the most important variables for our prediction")
   #image = Image.open('variable_importance_randomforest_hype_rand.png')
   #st.image(image, caption='RandomForest_with hyperparameter and randomizedgridsearch_variable_importance')
   
@@ -487,7 +487,7 @@ with Capstone_Project:
 
   st.dataframe(df)
   
-   st.write("we want to know about the most important variables for our prediction")
+  st.write("we want to know about the most important variables for our prediction")
   #image = Image.open('variable_importance_decisiontree.png')
   #st.image(image, caption='decisiontree_variable_importance')
   
@@ -541,7 +541,7 @@ with Capstone_Project:
 
   st.dataframe(df)
   
-   st.write("we want to know about the most important variables for our prediction")
+  st.write("we want to know about the most important variables for our prediction")
   #image = Image.open('variable_importance_randomforest_hype_rand.png')
   #st.image(image, caption='RandomForest_with hyperparameter and randomizedgridsearch_variable_importance')
   

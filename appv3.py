@@ -280,7 +280,7 @@ with Capstone_Project:
   plt.title('Training Set Correlations', size=15)
   st.pyplot(fig)
   st.subheader("Imputation")
-  st.markdown("##Imputation + 1. Drop all columns with >90% Na Values. + 2. KNN Imputation for numerical values + 3. Mode Imputation for categorical values.")
+  st.markdown("1. Drop all columns with >90% Na Values. => 2. KNN Imputation for numerical values => 3. Mode Imputation for categorical values.")
 
   
   

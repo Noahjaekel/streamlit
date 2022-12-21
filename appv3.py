@@ -607,8 +607,11 @@ with Capstone_Project:
   st.markdown("After all machine learning algorithms we used, we got the best performance (while just using 5 variables) of predicting the saleprice of the house with the RandomForest")
   st.markdown("Below there is a scatterplot which presents the performance of our model:")
   
+  image = Image.open('scatterplot-4.png')
+  st.image(image, caption='Performance of RandomForest')
   
-  st.write("selected feature variables")
+  
+  st.write("The five most important feature variables are the following")
   
   data = [
     [0.51, "OverallQual", "Overall material and finish quality"],

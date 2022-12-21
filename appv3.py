@@ -287,7 +287,7 @@ with Capstone_Project:
   data = [
     ["RandomForest", "RandomForest with Hypertuning", "RandomForest with randomizedgridsearch and Hypertuning", "LinearRegression", "DecisionTree", "LassoModel"]]
   
-  df = pd.DataFrame(data, columns=["different types"])
+  df = pd.DataFrame(data)
 
   st.dataframe(df)
   

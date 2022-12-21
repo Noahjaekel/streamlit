@@ -628,7 +628,9 @@ with Capstone_Project:
 
   st.dataframe(df)
   
-  st.markdown("__Conclusion and usage of results__"
+  st.markdown("__Conclusion and usage of results__")
+  
+  st.write("our most important feature variables are the following")
 
   data = [
     ["R2 on train", 0.9705],
@@ -638,6 +640,10 @@ with Capstone_Project:
     ["MAE", 22473.7433]]
   
   df = pd.DataFrame(data, columns=["type of measure", "value"])
+  
+  st.write("Conclusion of our performance numbers")
+  
+  st.write("further usage")
   
 
   

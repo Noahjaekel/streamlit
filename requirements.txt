@@ -5,3 +5,4 @@ matplotlib
 plotly
 Pillow
 seaborn
+pickle-mixin 1.0.2

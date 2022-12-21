@@ -612,6 +612,34 @@ with Capstone_Project:
   st.dataframe(df)
   
   
+  # Create the data for the first table
+  data1 = [['Column 1', 'Column 2'],
+         ['Row 1', 1],
+         ['Row 2', 2],
+         ['Row 3', 3]]
+
+# Create the data for the second table
+  data2 = [['Column 1', 'Column 2'],
+         ['Row 1', 4],
+         ['Row 2', 5],
+         ['Row 3', 6]]
+
+# Create the data for the third table
+  data3 = [['Column 1', 'Column 2'],
+         ['Row 1', 7],
+         ['Row 2', 8],
+         ['Row 3', 9]]
+
+# Create the first table and add it to the sidebar
+  st.sidebar.table(data1, header=True, index=True)
+
+# Create the second table and add it to the sidebar
+  st.sidebar.table(data2, header=True, index=True)
+
+# Create the third table and add it to the sidebar
+  st.sidebar.table(data3, header=True, index=True)
+  
+  
   
   
   

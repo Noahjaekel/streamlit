@@ -630,14 +630,16 @@ with Capstone_Project:
          ['Row 2', 8],
          ['Row 3', 9]]
 
-# Create the first table and add it to the sidebar
-  st.sidebar.table(data1)
+# Place the tables inside a st.beta_columns block
+  with st.beta_columns(3):
+    # Create the first table
+    st.table(data1)
 
-# Create the second table and add it to the sidebar
-  st.sidebar.table(data2)
+    # Create the second table
+    st.table(data2)
 
-# Create the third table and add it to the sidebar
-  st.sidebar.table(data3)
+    # Create the third table
+    st.table(data3)
   
   
   

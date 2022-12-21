@@ -288,8 +288,9 @@ with Capstone_Project:
     ["RandomForest", "RandomForest with Hypertuning", "RandomForest with randomizedgridsearch and Hypertuning", "LinearRegression", "DecisionTree", "LassoModel"],
   
   st.write("__RandomForest__")
-    
   st.write("training the data with all the variables")
+    
+  
   
   data = [
     ["R2 on train", 0.9735],

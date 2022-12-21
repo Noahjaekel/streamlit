@@ -630,7 +630,7 @@ with Capstone_Project:
   
   st.markdown("__Conclusion and usage of results__")
   
-  st.write("our most important feature variables are the following")
+  st.write("performance numbers")
 
   data = [
     ["R2 on train", 0.9705],

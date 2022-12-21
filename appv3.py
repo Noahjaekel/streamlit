@@ -283,6 +283,7 @@ with Capstone_Project:
   st.markdown("1. Drop all columns with >90% Na Values. => 2. KNN Imputation for numerical values => 3. Mode Imputation for categorical values.")
 
   
+  st.subheader("Training our Model")
   st.write("__We used the following machine learning algorithms__:")
   data = [["RandomForest", "RandomForest with Hypertuning", "RandomForest with randomizedgridsearch and Hypertuning", "LinearRegression", "DecisionTree", "LassoModel"]]
   

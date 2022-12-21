@@ -259,7 +259,9 @@ with House_Price:
   
 with Capstone_Project:
   st.header("Capstone Project")
-  st.write("our goal is to predict the sale price of a house in america based on the below variables:")
+  st.write("🎯Our goal: predicting sale price of Real Estate in Ames, Iowa:")
+  st.subheader("Selected Data")
+  st.write(df.head(10))
   st.write("__RandomForest__")
   st.write("training the data with all the variables")
   

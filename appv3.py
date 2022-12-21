@@ -260,7 +260,7 @@ with House_Price:
   
 with Capstone_Project:
   st.header("Capstone Project")
-  st.write("🎯Our goal: predicting sale price of Real Estate in Ames, Iowa: </n> with this we aim to increase transparency in the complex real-estate market. </n> Real Estate Brokers are very expensive and with this tool customers can quickly and cheaply replace the cost-intense valuation")
+  st.write("🎯Our goal: predicting sale price of Real Estate in Ames, Iowa: </n> with this we aim to increase transparency in the complex real-estate market. </n> Real Estate Brokers are very expensive and with this tool customers can quickly and cheaply replace the cost-intense valuation", unsafe_allow_html = True)
   st.subheader("Selected Data")
   st.write(df.head(10))
   numeric_features = []

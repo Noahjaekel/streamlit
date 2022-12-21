@@ -630,7 +630,6 @@ with Capstone_Project:
   
   st.markdown("__Conclusion and usage of results__"
 
-  st.write("our performance with just using the five most important variables")
               
   data = [
     ["R2 on train", 0.9705],

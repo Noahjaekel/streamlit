@@ -615,6 +615,7 @@ with Capstone_Project:
     [0.05, "GarageCars", "Size of garage in car capacity"],
     [0.04, "BsmtFinSF1", "Type 1 finished square feet"],
     [0.03, "TotalBsmtSF", "Total square feet of basement area"]
+  ]
   df = pd.DataFrame(data, columns=["feature_importance", "variable", "meaning_of_the_variable"])
 
   st.dataframe(df)

@@ -641,6 +641,8 @@ with Capstone_Project:
   
   df = pd.DataFrame(data, columns=["type of measure", "value"])
   
+  st.dataframe(df)
+  
   st.write("Conclusion of our performance numbers")
   
   st.write("further usage")

@@ -262,6 +262,25 @@ with Capstone_Project:
   st.write("🎯Our goal: predicting sale price of Real Estate in Ames, Iowa:")
   st.subheader("Selected Data")
   st.write(df.head(10))
+  numeric_features = []
+  cat_features = []
+  for col in df.drop("SalePrice", axis = 1).columns:
+    if df[col].dtypes != df["CentralAir"].dtypes:
+      numeric_features.append(col)
+    else:
+        cat_features.append(col)
+  sns.set_theme(style="ticks")
+  # Generate a large random dataset
+  corr = df[numeric_features].corr()
+  rs = np.random.RandomState(33)
+  mask = np.triu(np.ones_like(corr, dtype=bool))
+  fig, axs = plt.subplots(figsize=(45, 25))
+  sns.heatmap(corr , annot=True, square=True, mask=mask,  cmap="Oranges")
+  plt.title('Training Set Correlations', size=15)
+  st.pyplot(fig)
+
+  
+  
   st.write("__RandomForest__")
   st.write("training the data with all the variables")
   

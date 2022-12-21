@@ -326,8 +326,8 @@ with Capstone_Project:
   st.dataframe(df)
   
   st.write("we want to know about the most important variables for our prediction")
-  #image = Image.open('variable_importance_randomforest_hype.png')
-  #st.image(image, caption='RandomForest_with hyperparameter_variable_importance')
+  image = Image.open('variable_importance_randomforest_hype.png')
+  st.image(image, caption='RandomForest_with hyperparameter_variable_importance')
   
   st.write("training the data with just the five most important variables")
   st.write("new performance")

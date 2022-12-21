@@ -631,13 +631,13 @@ with Capstone_Project:
          ['Row 3', 9]]
 
 # Create the first table and add it to the sidebar
-  st.sidebar.table(data1, header=True)
+  st.sidebar.table(data1)
 
 # Create the second table and add it to the sidebar
-  st.sidebar.table(data2, header=True)
+  st.sidebar.table(data2)
 
 # Create the third table and add it to the sidebar
-  st.sidebar.table(data3, header=True)
+  st.sidebar.table(data3)
   
   
   

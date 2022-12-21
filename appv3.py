@@ -285,6 +285,13 @@ with Capstone_Project:
   
   st.subheader("Training our Model")
   st.write("__We used the following machine learning algorithms__:")
+  
+  data = [['Column 1', 'Column 2']]
+        
+
+# Create the table and disable the display of row numbers
+  st.table(data, index=False)
+  
   data = [["RandomForest", "RandomForest with Hypertuning", "RandomForest with randomizedgridsearch and Hypertuning", "LinearRegression", "DecisionTree", "LassoModel"]]
   
   df = pd.DataFrame(data)

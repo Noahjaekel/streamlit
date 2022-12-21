@@ -285,7 +285,11 @@ with Capstone_Project:
   
   st.subheader("We used the following methods:")
   data = [
-    ["RandomForest", "RandomForest with Hypertuning", "RandomForest with randomizedgridsearch and Hypertuning", "LinearRegression", "DecisionTree", "LassoModel"],
+    ["RandomForest", "RandomForest with Hypertuning", "RandomForest with randomizedgridsearch and Hypertuning", "LinearRegression", "DecisionTree", "LassoModel"]]
+  
+  df = pd.DataFrame(data, columns=["different types"])
+
+  st.dataframe(df)
   
   st.write("__RandomForest__")
   st.write("training the data with all variables")

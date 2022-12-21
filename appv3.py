@@ -631,7 +631,7 @@ with Capstone_Project:
          ['Row 3', 9]]
 
 # Place the tables inside a st.beta_columns block
-  with st.beta_columns(3):
+  with st.columns(3):
     # Create the first table
     st.table(data1)
 

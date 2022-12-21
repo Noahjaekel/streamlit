@@ -478,7 +478,7 @@ with Capstone_Project:
   st.write("__DecisionTree__")
   st.write("our results when just training the data with all the variables")
   
-    data = [
+  data = [
     ["R2 on train", 1.0],
     ["RMSE", 50940.8499],
     ["MAPE", 0.2194],
@@ -532,7 +532,7 @@ with Capstone_Project:
   st.write("__LassoModel__")
   st.write("our results when just training the data with all the variables")
   
-    data = [
+  data = [
     ["R2 on train", 0.9327],
     ["RMSE", 28135.8458],
     ["MAPE", 0.1157],

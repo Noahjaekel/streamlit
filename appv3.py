@@ -612,34 +612,7 @@ with Capstone_Project:
   st.dataframe(df)
   
   
-  # Create the data for the first table
-  data1 = [['Column 1', 'Column 2'],
-         ['Row 1', 1],
-         ['Row 2', 2],
-         ['Row 3', 3]]
 
-# Create the data for the second table
-  data2 = [['Column 1', 'Column 2'],
-         ['Row 1', 4],
-         ['Row 2', 5],
-         ['Row 3', 6]]
-
-# Create the data for the third table
-  data3 = [['Column 1', 'Column 2'],
-         ['Row 1', 7],
-         ['Row 2', 8],
-         ['Row 3', 9]]
-
-# Place the tables inside a st.beta_columns block
-  with st.columns(3):
-    # Create the first table
-    st.table(data1)
-
-    # Create the second table
-    st.table(data2)
-
-    # Create the third table
-    st.table(data3)
   
   
   

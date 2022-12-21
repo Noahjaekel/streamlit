@@ -276,19 +276,23 @@ with Capstone_Project:
   st.image(image, caption='RandomForest_variable_importance')
   
   st.write("training the data with just the five most important variables")
+  st.write("new performance")
   data = [
-    ["R2 on train", 0.],
-    ["RMSE", ],
-    ["MAPE", 0.],
-    ["R2 on test", 0.],
-    ["Veränderungen absolut", ],
-    ["RMSE", ],
-    ["MAPE", ],
-    ["R2 on test"],
+    ["R2 on train", 0.9705],
+    ["RMSE", 27219.9228],
+    ["MAPE", 0.1332],
+    ["R2 on test", 0.8962]]
+  st.write("absolute changes")
+  data = [
+    ["RMSE", -32.3219],
+    ["MAPE", 0.0194],
+    ["R2 on test", 0.0002]]
+  st.write("percent changes")
+  data = [
     ["Veränderungen prozentual", ],
-    ["RMSE", ],
-    ["MAPE", ],
-    ["R2 on test"]]
+    ["RMSE", -0.0012],
+    ["MAPE", 0.1705],
+    ["R2 on test", 0.0003]]
   df = pd.DataFrame(data, columns=["type of measure", "value"])
 
   st.dataframe(df)
